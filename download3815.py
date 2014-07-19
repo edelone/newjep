@@ -22,7 +22,7 @@ def create_archive_dir():
 		os.mkdir(archive_folder)
 
 def download_pages():
-	for page in itertools.count(1):
+	for page in itertools.count(3815):
 		new_file_name = "%s.html" % page
 		destination_file_path = os.path.join(archive_folder, new_file_name)
 		if not os.path.exists(destination_file_path):
